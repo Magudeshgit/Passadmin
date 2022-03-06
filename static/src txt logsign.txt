@@ -1,0 +1,18 @@
+Passadmin logo position:
+top: 145px;
+left:  60px;
+
+Sign up:
+singup welcm txt:
+40, med mont
+-------------------------
+input fields:
+placeholder txt: 
+25, light mont
+border-bottom: 500px width, 2px h, #F6F6F6
+ SUBMIT SAME AS ALL.
+
+vector positon:
+124px from top;
+55px from right;
+size: 530px * 390px
