@@ -1,0 +1,70 @@
+@font-face
+{
+  src: url(Assets/Fonts/Montserrat-Medium.ttf);
+    font-family: Montserrat-medium;
+}
+@font-face
+{
+  src: url(Assets/Fonts/Montserrat-SemiBold.ttf);
+    font-family: Montserrat-semiBold;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: #090909;
+	color: white;
+    overflow-x: hidden;
+}
+
+.logo
+{
+    font-family: Montserrat-SemiBold;
+    font-size: 40px;
+    pointer-events: none;
+}
+.main_cnt
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding: 40px;
+}
+
+span
+{
+	color: #3B21F1;
+}
+.head-txt
+{
+	font-size: 32px;
+	padding-left: 40px;
+	margin-top: 30px;
+	font-family: Montserrat-semiBold;
+	text-decoration: underline;
+
+}
+.txt
+{
+	max-width: 50%;
+	font-family: Montserrat-medium;
+	font-size: 30px;
+}
+@media (max-width: 900px)
+{
+	.vector
+	{
+		display: none;
+	}
+	.txt
+	{
+		max-width: 100%;
+	}
+}

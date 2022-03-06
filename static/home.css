@@ -1,0 +1,299 @@
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-SemiBold.ttf);
+    font-family: Montserrat-semiBold;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Regular.ttf);
+    font-family: Montserrat-regular;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Light.ttf);
+    font-family: Montserrat-light;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Medium.ttf);
+    font-family: Montserrat-medium;
+}
+*
+{
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: linear-gradient(-45deg,#191919,#090909);
+	/*	*/
+	color: white;
+	font-family: Montserrat-regular;
+	
+}
+.body
+{
+	scroll-snap-type: mandatory;
+	scroll-snap-type: y mandatory;
+	scroll-snap-points-y: repeat(500px);
+	scroll-behavior: smooth;
+}
+.child
+{
+	scroll-snap-align: start;
+}
+::-webkit-scrollbar 
+{
+    width: 12px;
+    background: #141414;
+}
+::-webkit-scrollbar-thumb 
+{
+    background: #191919;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10%;
+    background: #141414;
+}
+
+.fas
+{
+	font-size: 64px;
+}
+.parent1
+{
+	width: 100%;
+	min-height: 100vh;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: start;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+.hm-cont
+{
+	width: 100%;
+    height: 80vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px;
+	/*gap: 1.5em;*/
+}
+.wel-txt
+{
+	margin-top: -80px;
+}
+.vector
+{
+	max-width: 500px;
+}
+.main-cont
+{
+	font-family: Montserrat-medium;
+	font-size: 30px;
+	max-width: 490px;
+
+}
+.btn
+{
+	width:  150px;
+	height: 50px;
+	background: #3B21F1;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	margin-top: 20px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: .5px;
+	font-family: Montserrat-medium;
+	cursor: pointer;
+}
+.ul
+{
+	text-decoration: underline;
+}
+.signup
+{
+	opacity: .8;
+}
+.signin
+{
+	margin-right: 15px;
+}
+.hiw
+{
+	min-height: 100vh;
+	scroll-snap-align: start;
+}
+.title
+{
+	text-align: center;
+	font-size: 40px;
+	margin: 20px;
+	font-family: Montserrat-semiBold;
+}
+.cards
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.card1-cont
+{
+	max-width: 90%;
+}
+.title-wrap
+{
+	width: 100%;	
+	height: 100px;
+	display:  flex;
+	justify-content: center;
+	align-items:  flex-end;
+}
+.head
+{
+	font-size: 40px;
+	text-align: center;
+	font-family: Montserrat-semiBold;
+	margin: 10px;
+}
+.card1-cont, .card3-cont, .card2-cont
+{
+	font-size: 30px;
+	font-family: Montserrat-light;
+	max-width: 70%;
+	text-align: center;
+	
+}
+.card-w
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.card-img
+{
+	margin: 10px;
+}
+.contact
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	scroll-snap-align: start;
+}
+.top
+{
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.bottom
+{
+	background: #191919;
+	height: 50%;
+	width: 100%;
+}
+.main-head
+{
+	font-size: 40px;
+	margin: 10px;
+	font-family: Montserrat-semiBold;
+}
+.sec-head
+{
+	font-size: 30px;
+	font-family: Montserrat-Regular;
+}
+.bottom
+{
+	height: 50%;
+	width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+.ct-btns
+{
+	flex-wrap: wrap;
+}
+.cthead
+{
+	font-size: 40px;
+	font-family: Montserrat-medium;
+}
+.gmail-head
+{
+	font-size: 30px;
+	font-family: Montserrat-medium;
+	margin: 20px;
+}
+.ion
+{
+	z-index: 100;
+	color: white;
+	font-size: 40px;
+}
+.lg
+{
+	font-family: Montserrat-SemiBold;
+    font-size: 40px;
+    pointer-events: none;
+    margin: 20px;	
+}
+.cr-d
+{
+	position: absolute;
+	bottom: 0;
+}
+.cr
+{
+	max-width: 64px;
+}
+.container
+{
+	scroll-snap-type: y mandatory;
+}
+@media (max-width: 900px)
+{
+	.cards
+	{
+		flex-wrap: wrap;
+		gap: 1.5em;
+
+	}
+	.hm-cont
+	{
+		justify-content: center;
+		text-align: center;
+	}
+	.vector
+	{
+		display: none;
+	}
+	.main-cont, .card1-cont, .card3-cont, .card2-cont, .sec-head, .gmail-head,
+	{
+		font-size: 25px;
+	}
+	.title, .head, .main-head, .cthead, .lg, .ion
+	{
+		font-size: 35px;
+	}
+}

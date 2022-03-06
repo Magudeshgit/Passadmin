@@ -1,0 +1,152 @@
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Medium.ttf);
+    font-family: Montserrat-medium;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-SemiBold.ttf);
+    font-family: Montserrat-semiBold;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Regular.ttf);
+    font-family: Montserrat-regular;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Light.ttf);
+    font-family: Montserrat-light;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: #090909;
+	color: white;
+}
+.sec-head
+{
+	font-size: 40px;
+	margin-top: 10px;
+	font-family: Montserrat-medium;
+
+}
+.parent
+{
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+.header
+{
+	margin-left: 10px;
+}
+.logo
+{
+    font-family: Montserrat-SemiBold;
+    font-size: 40px;
+    pointer-events: none;
+}
+span
+{
+	color: #3B21F1;
+}
+.main-cnt
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+.box
+{
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	align-items: flex-start;
+	margin: 10px;
+	position: relative;
+}
+.int
+{
+	border: none;
+	outline: none;
+	background: transparent;
+	color: white;
+	padding: 5px;
+	width: 500px;
+	margin: 10px;
+	font-size: 24px;
+	font-family: Montserrat-light;
+	border-bottom: 2px solid #F6F6F6;
+}
+::-webkit-input-placeholder {
+  color: #F6F6F6;
+  font-size: 25px;
+  font-family: Montserrat-light;
+}
+.btn1
+{
+	width:  150px;
+	height: 50px;
+	background: #3B21F1;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	margin-top: 20px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: .5px;
+	font-family: Montserrat-medium;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.passint
+{
+	position: relative;
+}
+.passeye
+{
+	max-width: 7%;
+	position: absolute;
+	right: 20px;
+	bottom: 82.5px;
+}
+label
+{
+	font-family: Montserrat-light;
+}
+.checkint
+{
+  display: flex;
+  flex-direction: column;
+}
+.check
+{
+	outline: none;
+	border: none;
+}
+#id_checkbox
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.anchor
+{
+	text-decoration: underline;
+	color: white;
+	font-family: Montserrat-light;
+	margin: 10px;
+}
+@media (max-width: 900px)
+{
+	.vector
+	{
+		display: none;
+	}
+}
