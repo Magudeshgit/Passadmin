@@ -1,3 +1,0 @@
-nav elements :
-25px x axis from each element
-user icon slone 40px in each side x axis
