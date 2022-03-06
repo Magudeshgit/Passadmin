@@ -1,0 +1,1 @@
+web: gunicorn fst_dja_prj.wsgi --log-file -
