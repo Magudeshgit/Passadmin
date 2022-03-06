@@ -1,0 +1,31 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{%static 'password_reset.css'%}">
+	<title>New Password</title>
+</head>
+<body>
+	{%include 'register/nav.html'%}
+	<div class="parent">
+	<div class="cont">
+	<p class="main-txt">Reset Your password by Entering Your New Password!</p>
+	<form method="POST" class="passfrm">
+		{%csrf_token%}
+		{{form.new_password1}}
+		{{form.new_password2}}
+		<p>{{form.subject.errors}}</p>
+		<input type="submit" class="subbtn">
+	</form>
+</div>
+</div>
+<script>
+    	let int =  document.querySelector('#id_new_password1')
+    	let int2 =  document.querySelector('#id_new_password2')
+    	int.placeholder = 'New password'
+    	int2.placeholder = 'New Password Confirmation'
+    </script>
+</body>
+</html>

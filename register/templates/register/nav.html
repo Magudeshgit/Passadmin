@@ -1,0 +1,53 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{%static 'regnav.css'%}">
+</head>
+<body>
+		<div class="nav">
+			<div class="logo-wrap">
+				<p class="logo">Pass<span class="logo-sp">Admin</span></p>
+			</div>
+			<div class="hamburg">
+		    	<img src="{% static 'Assets/Images/nav.svg' %}">
+		    </div>
+			<div class="side-bar">
+				<div class="nav-links">
+    			<ul>
+    				<li><a href="/" class="nav-anchor"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+    				<li><a href="/Why_us" class="nav-anchor"><ion-icon name="lock-closed-outline"></ion-icon>Why us?</a></li>
+    				<li><a href="/About" class="nav-anchor"><ion-icon name="document-text-outline"></ion-icon>About</a></li>
+    				<li><a href="/" class="nav-anchor"><ion-icon name="call-outline"></ion-icon>Contact us</a></li>
+    				<li><a href="/register" class="nav-anchor"><ion-icon name="log-in-outline"></ion-icon></ion-icon>Sign up</a></li>
+    				<li><a href="/login" class="nav-anchor"><ion-icon name="trail-sign-outline"></ion-icon>Sign In</a></li>
+    			</ul>
+    		    </div>
+
+    		    <div class="exit-btn">
+    		    	<img src="{%static 'Assets/Images/Arrow.png'%}" alt="exit">
+    		    </div>
+
+			</div>
+    </div>
+    <script type="text/javascript">
+	let ham_btn = document.querySelector('.hamburg')
+	let bar = document.querySelector('.side-bar')
+	let nav_exit = document.querySelector('.exit-btn')
+	let body = document.getElementsByTagName('body')[0]
+	ham_btn.addEventListener('click', prfunc)
+	nav_exit.addEventListener('click', exfunc)
+
+	function prfunc() {
+		bar.classList.toggle('active')
+		ham_btn.classList.toggle('active')
+	};
+	function exfunc(){
+		bar.classList.toggle('active')
+	}
+	</script>
+</body>
+</html>

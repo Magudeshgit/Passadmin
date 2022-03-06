@@ -1,0 +1,55 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PassAdmin || SignUp</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'signup.css'%}">
+</head>
+<body>
+	<div class="parent">
+		<div class="content">
+			<div class="header">
+			<p class="logo">Pass<span>Admin</span></p>
+		    <p class="sec-head">Create an Account Instantly</p>
+		</div>
+		    <div class="main-cnt">
+		    	
+		    	<form action="" method="POST">
+		    		{%csrf_token%}
+		    		{{Createform.username}}
+                    {{Createform.first_name}}
+                    {{Createform.last_name}}
+                    {{Createform.email}}
+                    {{Createform.password1}}
+                    {{Createform.password2}}
+        <p class="headerr">{{errormsg}}</p>
+        <input type="submit" value="Create Account" class="btn1"> 
+		    	</form>
+		    	<div class="vector">
+		    		<img src="{%static 'Assets/Images/undraw_mobile_login_re_9ntv (1) 1.svg'%}">
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+  var form_fields = document.getElementsByTagName('input')
+  form_fields[1].classList.add('int')
+  form_fields[2].classList.add('int')
+  form_fields[3].classList.add('int')
+  form_fields[4].classList.add('int')
+  form_fields[5].classList.add('int')
+  form_fields[6].classList.add('int')
+
+
+  form_fields[1].placeholder = 'Username'
+  form_fields[2].placeholder = 'Firstname'
+  form_fields[3].placeholder = 'Lastname'
+  form_fields[4].placeholder = 'Email'
+  form_fields[5].placeholder = 'Password'
+  form_fields[6].placeholder = 'Re-Enter Password'
+
+</script>
+</body>
+</html>
