@@ -1,0 +1,34 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'contactstyle.css' %}">
+</head>
+<body>
+	<div class="parent">
+		<div class="content">
+			{%include 'main/nav.html'%}
+			<p class="sec-head">Help us Improve with your Valuable Suggestions and Reviews</p>
+		    <div class="main-cnt">
+		    	
+		    	<form action="" method="POST">
+		    		{%csrf_token%}
+		    		<input name="firstname" type="text" class="int" placeholder="Firstname">
+		    		<input name="lastname" type="text" class="int" placeholder="Lastname">
+		    		<input name="Email" type="text" class="int" placeholder="Your Email">
+		    		<input name="Message"type="text" class="int" placeholder="Message">
+		    		<textarea name = "main-msg" placeholder="Additional Details" class="int"></textarea>
+        			<input type="submit" value="Submit" class="btn1"> 
+		    	</form>
+		    	<div class="vectorwrap">
+		    		<img src="{%static 'Assets/Images/undraw_contact_us_re_4qqt.svg'%}" class="vector">
+		    	</div>
+		    	<p class="msg">{{message}}</p>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
