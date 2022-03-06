@@ -1,0 +1,34 @@
+60deg or 40deg of linear gradient top: #191919, bottom:#090909
+________________________________
+logo/nav-btn: top:35, left:50;
+home-content:
+PassAdmin is your one stop Site for keeping your Passwords 
+Safe and Secure.
+font-size: 30,med,mont with passadmin span.
+
+sign-in/sign-up: 15px between btns and 20px from top,
+btn-size:
+150w,50h,#3B21F1
+________________________________
+vector-position: right: 25, top:140.
+________________________________
+
+How it works cards:
+how it works txt: 40, semibold,mont
+content txt: mont,light,30
+80px between cards,
+51px from x-axis.
+________________________________
+3rd sec, security is our top most priority:
+security is our top most priority txt: 40, semibold, mont.
+give it a try now txt: 30,reg,mont,
+btns same as before.
+________________________________
+contact us:
+#191919
+height: 50% of total vw
+contact us txt: 40,med,mont
+gmail: 30,med,mont
+________________________________
+copyright txt:
+20,med/light/mont
