@@ -38,6 +38,7 @@ body
     font-size: 40px;
     pointer-events: none;
 }
+
 span
 {
 	color: #3B21F1;
@@ -53,7 +54,7 @@ span
 {
 	display: flex;
 	flex-direction: column;
-	padding: 50px;
+  padding: 10px 50px 10px 50px;
 }
 .header
 {
@@ -63,7 +64,7 @@ form
 {
 	display: flex;
 	flex-direction: column;
-	max-width: 50%;
+  width: 100%;
 	align-items: flex-start;
 }
 .main-cnt
@@ -71,7 +72,7 @@ form
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 	margin-top: 50px;
 }
 .int
@@ -81,7 +82,7 @@ form
 	background: transparent;
 	color: white;
 	padding: 5px;
-	width: 500px;
+	width: 90%;
 	margin: 10px;
 	font-size: 24px;
 	font-family: Montserrat-light;
@@ -99,13 +100,42 @@ form
 	border: none;
 	outline: none;
 	border-radius: 30px;
-	margin-top: 20px;
+	margin-top: 10px;
 	color: white;
 	font-size: 20px;
 	letter-spacing: .5px;
-	font-family: Montserrat-medium;
+	font-family: Montserrat-light;
 	cursor: pointer;
 	margin-left: 10px;
+}
+.anchor
+{
+	color: white;
+	margin: 20px;
+}
+.vector
+{
+	width: 50%;
+}
+.vector
+{
+	width: 100%;
+}
+.check-div
+{
+	margin: 10px;
+}
+@media (max-width: 700px)
+{
+	.logo, 
+	{
+		font-size: 35px;
+		text-align: center;
+	}
+	.sec-head
+	{
+		font-size: 30px;
+	}
 }
 @media (max-width: 900px)
 {

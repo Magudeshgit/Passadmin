@@ -40,7 +40,7 @@ body
 {
 	display: flex;
 	flex-direction: column;
-	padding: 50px;
+	padding: 10px 30px 10px 30px;
 }
 .header
 {
@@ -67,7 +67,7 @@ span
 {
 	display: flex;
 	flex-direction: column;
-	max-width: 50%;
+	width: 100%;
 	align-items: flex-start;
 	margin: 10px;
 	position: relative;
@@ -79,7 +79,7 @@ span
 	background: transparent;
 	color: white;
 	padding: 5px;
-	width: 500px;
+	width: 80%;
 	margin: 10px;
 	font-size: 24px;
 	font-family: Montserrat-light;
@@ -143,10 +143,31 @@ label
 	font-family: Montserrat-light;
 	margin: 10px;
 }
+.err
+{
+	font-family: Montserrat-light;
+	font-size: 16px;
+}
 @media (max-width: 900px)
 {
 	.vector
 	{
 		display: none;
+	}
+}
+@media (max-width: 700px)
+{
+	.logo
+	{
+		font-size: 35px;
+	}
+	.sec-head
+	{
+		font-size: 30px;
+	}
+	.box
+	{
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
