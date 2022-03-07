@@ -18,22 +18,22 @@ def CreatePage(request):
                 form = RegisterForm(request.POST)
                 if form.is_valid():
                         form.save()
-                        emailname = request.POST.get("first_name")
-                        emailid = request.POST.get("email")
-                        #print(emailname)
-                        template = render_to_string('register/Email_temp.html', {'name':emailname})
-                        email = EmailMessage(
-                                'PassAdmin',
-                                template,
-                                settings.EMAIL_HOST_USER,
-                                [emailid],
-                                )
-                        email.fail_silently=False
-                        email.send()
-                        if email.send():
-                                print("Mail Sent")
+                        # emailname = request.POST.get("first_name")
+                        # emailid = request.POST.get("email")
+                        # #print(emailname)
+                        # template = render_to_string('register/Email_temp.html', {'name':emailname})
+                        # email = EmailMessage(
+                        #         'PassAdmin',
+                        #         template,
+                        #         settings.EMAIL_HOST_USER,
+                        #         [emailid],
+                        #         )
+                        # email.fail_silently=False
+                        # email.send()
+                        # if email.send():
+                        #         print("Mail Sent")
                         messages.success(request, 'User Profile Created')
-                        return redirect('/Addpassword')
+                        return redirect('/')
                 else:
                         errmsg = "Check Your Credentials"
                         return render(request, 'register/signup.html', {"errormsg": errmsg, "Createform": form})
@@ -49,7 +49,8 @@ def loginpg(request):
                         messages.success(request, 'logged in as ' + username)
                         return redirect('/')
                 else:
-                        messages.error(request, 'Username or Password is Incorrect')
+                        context = {'err': "Your Username or password is incorrect"}
+                        return render(request, 'register/logins.html', context)
         return render(request, "register/logins.html")
 def logoutuser(request):
         logout(request)

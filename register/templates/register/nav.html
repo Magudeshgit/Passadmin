@@ -24,6 +24,7 @@
     				<li><a href="/" class="nav-anchor"><ion-icon name="call-outline"></ion-icon>Contact us</a></li>
     				<li><a href="/register" class="nav-anchor"><ion-icon name="log-in-outline"></ion-icon></ion-icon>Sign up</a></li>
     				<li><a href="/login" class="nav-anchor"><ion-icon name="trail-sign-outline"></ion-icon>Sign In</a></li>
+    				<li><a  class="nav-anchor close"><ion-icon name="close-outline"></ion-icon>Close</a></li>
     			</ul>
     		    </div>
 
@@ -36,11 +37,12 @@
     <script type="text/javascript">
 	let ham_btn = document.querySelector('.hamburg')
 	let bar = document.querySelector('.side-bar')
+	let close = document.querySelector('.close')
 	let nav_exit = document.querySelector('.exit-btn')
 	let body = document.getElementsByTagName('body')[0]
 	ham_btn.addEventListener('click', prfunc)
 	nav_exit.addEventListener('click', exfunc)
-
+	close.addEventListener('click', exfunc)
 	function prfunc() {
 		bar.classList.toggle('active')
 		ham_btn.classList.toggle('active')
