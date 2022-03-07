@@ -7,6 +7,7 @@
 	<title>{%block title%}PassAdmin{%endblock%}</title>
 	{%block link%}
 	<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
 	{%endblock%}
 </head>
 <body>
@@ -21,6 +22,10 @@
 				{{pask.Website}}
 				{{pask.Username}}
 				{{pask.password}}
+				<div class="check-div">
+				<input type="checkbox" id="id_checkbox">
+				<label for="id_checkbox" class="check">Show Password</label>
+				</div>
 				<input type="submit" value="Save" class="save-btn">
 			</form>
 			{%for message in messages%}
@@ -32,12 +37,22 @@
 
 <script type="text/javascript">
     let int = document.getElementsByTagName('input')
+    check = document.querySelector('#id_checkbox')
 
     int[1].placeholder = "Title"
     int[2].placeholder = "Username"
     int[3].placeholder = "Password"
     // EVENT LISTENER FOR NAV FUNCTION
-    
+    pass = int[3]
+    pass.type="password"
+    check.addEventListener('change', function(){
+        	if (this.checked){
+        		pass.type="text";
+        	}
+        	else{
+        		pass.type="password";
+        	}
+        })
 </script>
 </body>
 </html>

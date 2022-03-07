@@ -14,7 +14,7 @@ import pyperclip
 def handler404(request,exception):
      context = {'imgloc': "{% staticAssets/Images/undraw_page_not_found_re_e9o6.svg%}"}
      return render(request, 'main/404Error.html', context)
-@login_required(login_url='login')
+@login_required(login_url='Home/')
 def home(request):
      passes = passer()
      if request.method == "POST":
@@ -50,7 +50,7 @@ def contact_us(request):
                print("Mail Sent")
      return render(request, "main/contact.html")
 
-@login_required(login_url='login')
+@login_required(login_url='HomePage')
 def Passwords(request):
      passname = passmanager.objects.all()
      data_count = request.user.Passodata.all()

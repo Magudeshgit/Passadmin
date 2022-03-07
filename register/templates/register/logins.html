@@ -4,8 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PassAdmin || SignUp</title>
+	<title>PassAdmin || SignIn</title>
 	<link rel="stylesheet" type="text/css" href="{%static 'logins.css'%}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
 </head>
 <body>
 	<div class="parent">
@@ -24,6 +25,8 @@
 	        <input type="checkbox" id="id_checkbox">
 	        <label for="id_checkbox" class="check">Show Password</label>
 	        </div>
+	        <p class="err">{{err}}</p>
+	        <a href="/register" class="anchor">Don't Have an Account? Sign Up</a>
 	        <a href="/reset_password" class="anchor">Forgot password?</a>
 	    	</div>
 

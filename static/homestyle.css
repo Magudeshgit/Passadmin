@@ -13,6 +13,11 @@
 	src: url(Assets/Fonts/Montserrat-Regular.ttf);
     font-family: Montserrat-regular;
 }
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Light.ttf);
+    font-family: Montserrat-light;
+}
 *
 {
 	margin: 0;
@@ -43,7 +48,7 @@ body
 	width: 500px;
 	padding: 10px;
 	padding-bottom: 20px;
-	height: 430px;
+	
 	background: #121212;
 	box-shadow: 5px 5px 10px 7px rgba(0, 0, 0, 0.5),
 	            -5px -5px 10px 7px rgba(0,0,0,0.5);
@@ -51,7 +56,17 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+.check-div
+{
+	margin-right: auto;
+	margin-left: 15px;
 
+}
+.check-div label
+{
+	font-family: Montserrat-light;
 }
 .cont-header
 {
@@ -97,6 +112,7 @@ body
 	box-shadow: 5px 5px 10px 7px rgba(0, 0, 0, 0.25);
 	transition: 0.5s;
 }
+
 .save-btn:hover
 {
 	box-shadow: -5px -5px 10px 7px rgba(0, 0, 0, 0.25),

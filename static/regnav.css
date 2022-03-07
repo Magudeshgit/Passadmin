@@ -41,8 +41,13 @@
 	align-items: center;
 	width: 100%;
 	padding: 20px 40px 0 40px;
-	position: absoulte;
+	position: absolute;
 	top: 0;
+	z-index: 10000;
+}
+.close
+{
+	cursor: ;
 }
 .side-bar
 {
