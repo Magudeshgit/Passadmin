@@ -10,7 +10,7 @@ from .passwordform import passer
 from .models import *
 import pyperclip
 # Create your views here.
-
+# del this, just check if reps are working
 def handler404(request,exception):
      context = {'imgloc': "{% staticAssets/Images/undraw_page_not_found_re_e9o6.svg%}"}
      return render(request, 'main/404Error.html', context)
