@@ -18,20 +18,20 @@ def CreatePage(request):
                 form = RegisterForm(request.POST)
                 if form.is_valid():
                         form.save()
-                        # emailname = request.POST.get("first_name")
-                        # emailid = request.POST.get("email")
-                        # #print(emailname)
-                        # template = render_to_string('register/Email_temp.html', {'name':emailname})
-                        # email = EmailMessage(
-                        #         'PassAdmin',
-                        #         template,
-                        #         settings.EMAIL_HOST_USER,
-                        #         [emailid],
-                        #         )
-                        # email.fail_silently=False
-                        # email.send()
-                        # if email.send():
-                        #         print("Mail Sent")
+                        emailname = request.POST.get("first_name")
+                        emailid = request.POST.get("email")
+                        #print(emailname)
+                        template = render_to_string('register/Email_temp.html', {'name':emailname})
+                        email = EmailMessage(
+                                'PassAdmin',
+                                template,
+                                settings.EMAIL_HOST_USER,
+                                [emailid],
+                                )
+                        email.fail_silently=False
+                        email.send()
+                        if email.send():
+                                print("Mail Sent")
                         messages.success(request, 'User Profile Created')
                         return redirect('/')
                 else:
