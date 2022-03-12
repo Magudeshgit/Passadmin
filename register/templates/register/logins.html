@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PassAdmin || SignIn</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'logins.css'%}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
+</head>
+<body>
+	<div class="parent">
+		<div class="content">
+			<div class="header">
+			<p class="logo">Pass<span>Admin</span></p>
+		    <p class="sec-head">Login to Continue</p>
+		</div>
+		    <div class="main-cnt">
+		    <form name="form1" class="box" method="POST">
+	      	{%csrf_token%}
+	        <input type="text" name="username" placeholder="Username" autocomplete="off" class="int">
+	        <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off" class="int passint"></input>
+	        <div class="checkint">
+	        <div>
+	        <input type="checkbox" id="id_checkbox">
+	        <label for="id_checkbox" class="check">Show Password</label>
+	        </div>
+	        <p class="err">{{err}}</p>
+	        <a href="/register" class="anchor">Don't Have an Account? Sign Up</a>
+	        <a href="/reset_password" class="anchor">Forgot password?</a>
+	    	</div>
+
+	        <input type="submit" value="Sign in" class="btn1">
+	      </form>
+		    	<div class="vector">
+		    		<img src="{%static 'Assets/Images/undraw_secure_login_pdn4 (1) 1.svg'%}">
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+	<script>
+		passint = document.querySelector('.passint')
+        passeye = document.querySelector('.passeye')
+        check = document.querySelector('#id_checkbox')
+        check.addEventListener('change', function(){
+        	if (this.checked){
+        		passint.type="text";
+        	}
+        	else{
+        		passint.type="password";
+        	}
+        })
+	</script>
+</body>
+</html>

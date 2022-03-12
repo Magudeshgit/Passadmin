@@ -1,0 +1,99 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PassAdmin</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'home.css'%}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
+</head>
+<body class="body">
+{%include 'register/nav.html'%}
+<section class="Body">
+	<div class="parent1 child" >
+	
+	 <div class="hm-cont">
+		<div class="wel-txt">
+			<p class="main-cont">
+			Pass<span class="logo-sp">Admin</span> is your one stop<br> Site for keeping your<br> Passwords <span class="ul"><br>Safe and Secure.</span><br>Sign In or Sign Up to continue
+		    </p>
+		    <a href="/login"><button class="btn signin" href="/login">Sign In</button></a>
+		    <a href="/register"><button class="btn signup" href="/register">Sign up</button></a>
+		</div>
+		<div class="vector">
+			<img src="{%static 'Assets/Images/hmpgvc.svg'%}">
+		</div>
+	  </div>
+	  
+	</div>
+	<div class="hiw child" >
+		<div class="title-wrap">
+		<p class="title ul">How it Works?</p>
+	    </div>
+		<div class="cards">
+			<div class="card1-wrap card-w">
+				<div class="card-img">
+					<img src="{%static 'Assets/Images/1.svg'%}">
+				</div>
+				<p class="card1-head head">SignIn/SignUp</p>
+				<div class="card1-cont cont">
+					Create a Account by Signing up or Log in to your Existing Account by signing in
+				</div>
+			</div>
+			<div class="card2-wrap card-w">
+				<div class="card-img">
+					<img src="{%static 'Assets/Images/2.svg'%}">
+				</div>
+				<p class="card2-head head">Input Your Data</p>
+				<div class="card2-cont cont">
+					Enter Your data in the input fields, Website Name,Username of website, Password
+				</div>
+			</div>
+			<div class="card3-wrap card-w">
+			<div class="card-img">
+				<img src="{%static 'Assets/Images/3.svg'%}">
+			</div> 
+				<p class="card3-head head">Stored in Vault</p>
+				<div class="card3-cont cont">
+					Your Data is End-to-End Encypted with 16-bit encryption and securely sent to database
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="contact child" >
+    	<div class="top">
+    		<div class="firsthead">
+    			<p class="main-head">Security is Our Top Most Priority</p>
+    			<p class="sec-head">Give it a try now!</p>
+    			<div class="ct-btns">
+    				<a href="/login"><button class="btn signin" href="/login">Sign In</button></a>
+		    		<a href="/register"><button class="btn signup" href="/register">Sign up</button></a>
+    			</div>
+    		</div>
+    	</div>
+        <div class="bottom">
+    		<div class="lasthead">
+    			<p class="cthead ul">Contact Us</p>
+    			<p class="lg">Pass<span class="logo-sp">Admin</span><p>
+    			<p class="gmail-head">Sample@gmail.com</p>
+    			<div class="ct-ico">
+    				<img src="{%static 'Assets/Images/logo-instagram.svg'%}" class="cr">
+    				<img src="{%static 'Assets/Images/logo-github.svg'%}" class="cr">
+    				<img src="{%static 'Assets/Images/logo-linkedin.svg'%}" class="cr">			
+    			</div>
+
+    		</div>
+    		<div class="cr-d">
+    		<p class="cre">©Copyrights all rights Reserved 2022</p>
+    	    </div>
+    	</div>
+    </div>
+    </section>
+
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{%static 'password_reset.css'%}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
+	<title>Reset Complete!</title>
+</head>
+<body>
+{%include 'register/nav.html'%}	
+<div class="parent">
+	<div class="cont">
+		<form class="passfrm">
+		<p class="main-txt">Your Password has Been Reset Login to Continue!!</p>
+		<a href="/login">Log in</a>
+	     </form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'navstyle.css' %}">
+</head>
+<body class="body">
+	<div class="nav">
+			<div class="logo-wrap">
+				<p class="logo">Pass<span class="logo-sp">Admin</span></p>
+			</div>
+			<div class="hamburg">
+		    	<img src="{% static 'Assets/Images/nav.svg' %}">
+		    </div>
+			<div class="side-bar">
+				<div class="side-box">
+				<div class="profile-pic-wrap">
+					<img src="{% static 'Assets/Images/profile.png' %}" class="pr-pic">
+				</div>
+				<p class="user-name">{{request.user}}</p>
+			 	</div>
+				<div class="nav-links">
+    			<ul>
+    				<li><a href="/Addpassword" class="nav-anchor"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+    				<li><a href="/Vault" class="nav-anchor"><ion-icon name="lock-closed-outline"></ion-icon>Vault</a></li>
+    				<li><a href="/Home_About" class="nav-anchor"><ion-icon name="document-text-outline"></ion-icon>About</a></li>
+    				<li><a href="/Contact_us" class="nav-anchor"><ion-icon name="call-outline"></ion-icon>Contact Us</a></li>
+    				<li><a href="/logout" class="nav-anchor"><ion-icon name="log-out-outline"></ion-icon>Log out</a></li>
+    				<li class="close"><a class="nav-anchor close"><ion-icon name="close-outline"></ion-icon>Close</a></li>
+    			</ul>
+    		    </div>
+
+    		    <div class="exit-btn">
+    		    	<img src="{%static 'Assets/Images/Arrow.png'%}" alt="exit">
+    		    </div>
+
+			</div>
+    	</div>
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript">
+	let ham_btn = document.querySelector('.hamburg')
+	let bar = document.querySelector('.side-bar')
+	let close = document.querySelector('.close')
+	let nav_exit = document.querySelector('.exit-btn')
+	let body = document.getElementsByTagName('body')[0]
+	ham_btn.addEventListener('click', prfunc)
+	close.addEventListener('click', exfunc)
+	nav_exit.addEventListener('click', exfunc)
+	//theme.addEventListener('click', themefunc)
+	function prfunc() {
+		bar.classList.toggle('active')
+		ham_btn.classList.toggle('active')
+	};
+	function exfunc(){
+		bar.classList.toggle('active')
+	}
+	</script>
+</body>
+</html>

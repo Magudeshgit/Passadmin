@@ -1,0 +1,78 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PassAdmin || SignUp</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'signup.css'%}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
+</head>
+<body>
+	<div class="parent">
+		<div class="content">
+			<div class="header">
+			<p class="logo">Pass<span>Admin</span></p>
+		    <p class="sec-head">Create an Account Instantly</p>
+		</div>
+		    <div class="main-cnt">
+		    	
+		    	<form method="POST">
+		    		{%csrf_token%}
+		    		{{Createform.username}}
+                    {{Createform.first_name}}
+                    {{Createform.last_name}}
+                    {{Createform.email}}
+                    {{Createform.password1}}
+                    {{Createform.password2}}
+                    {{Createform.label}}
+               <div class="check-div">
+	        <input type="checkbox" id="id_checkbox">
+	        <label for="id_checkbox" class="check">Show Password</label>
+	        </div>
+        <p class="headerr">{{errormsg}}</p>
+        <a href="/login" class="anchor">Already have an account? Sign In</a>
+        <input type="submit" value="Create Account" class="btn1"> 
+		    	</form>
+		    	<div class="vector">
+		    		<img src="{%static 'Assets/Images/undraw_mobile_login_re_9ntv (1) 1.svg'%}">
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+  var form_fields = document.getElementsByTagName('input')
+  check = document.querySelector('#id_checkbox')
+  form_fields[1].classList.add('int')
+  form_fields[2].classList.add('int')
+  form_fields[3].classList.add('int')
+  form_fields[4].classList.add('int')
+  form_fields[5].classList.add('int')
+  form_fields[6].classList.add('int')
+  
+  passint = form_fields[5]
+  passsint = form_fields[6]
+
+
+  form_fields[1].placeholder = 'Username'
+  form_fields[2].placeholder = 'Firstname'
+  form_fields[3].placeholder = 'Lastname'
+  form_fields[4].placeholder = 'Email'
+  form_fields[5].placeholder = 'Password'
+  form_fields[6].placeholder = 'Re-Enter Password'
+
+
+        check.addEventListener('change', function(){
+        	if (this.checked){
+        		passint.type="text";
+        		passsint.type="text";}
+
+        	else{
+        		passint.type="password";
+        		passsint.type="password";
+        	}
+        })
+
+</script>
+</body>
+</html>
