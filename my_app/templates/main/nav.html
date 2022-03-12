@@ -17,10 +17,12 @@
 		    	<img src="{% static 'Assets/Images/nav.svg' %}">
 		    </div>
 			<div class="side-bar">
+				<div class="side-box">
 				<div class="profile-pic-wrap">
 					<img src="{% static 'Assets/Images/profile.png' %}" class="pr-pic">
 				</div>
 				<p class="user-name">{{request.user}}</p>
+			 	</div>
 				<div class="nav-links">
     			<ul>
     				<li><a href="/Addpassword" class="nav-anchor"><ion-icon name="home-outline"></ion-icon>Home</a></li>

@@ -24,6 +24,7 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     #path('error_tst/', views.errortst),
 
     path('', views.home),
@@ -43,7 +44,7 @@ urlpatterns = [
     path('delete/<str:pk>/', views.Delete, name="Delete"),
     path('edit/<str:pk_test>/', views.Edit, name="Edit"),
     path('copy/<str:pk_testt>/', views.Copy, name="Copy"),
-
+    
     path('reset_password/', auth_views.PasswordResetView.as_view(template_name="register/password_reset.html"), name="reset_password"),
     path('reset_password_sent/', auth_views.PasswordResetDoneView.as_view(template_name="register/reset_password_sent.html"), name="password_reset_done"),
     path('reset/<uidb64>/<token>', auth_views.PasswordResetConfirmView.as_view(template_name="register/reset.html"), name="password_reset_confirm"),
