@@ -1,0 +1,138 @@
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-SemiBold.ttf);
+    font-family: Montserrat-semiBold;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Regular.ttf);
+    font-family: Montserrat-regular;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Light.ttf);
+    font-family: Montserrat-light;
+}
+@font-face
+{
+	src: url(Assets/Fonts/Montserrat-Medium.ttf);
+    font-family: Montserrat-medium;
+}
+*
+{
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	/*background: linear-gradient(-45deg,#191919,#090909);*/
+	background: #090909;
+	color: white;
+	font-family: Montserrat-regular;
+	
+}
+.logo
+{
+    font-family: Montserrat-SemiBold;
+    font-size: 40px;
+    pointer-events: none;
+}
+span
+{
+	color: #3B21F1;
+}
+.sec-head
+{
+	font-size: 30px;
+	margin-top: 10px;
+	font-family: Montserrat-medium;
+	max-width: 50%;
+	margin-right: auto;	
+	margin-left: 20px;
+
+}
+.parent
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.header
+{
+	margin-left: 10px;
+}
+form
+{
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	align-items: flex-start;
+}
+.main-cnt
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+	padding: 10px	;
+}
+form
+{
+	width: 50%;
+}
+.int
+{
+	border: none;
+	outline: none;
+	background: transparent;
+	color: white;
+	padding: 5px;
+	width: 100%;
+	margin: 10px;
+	font-size: 24px;
+	font-family: Montserrat-light;
+	border-bottom: 2px solid #F6F6F6;
+}
+.vector-wrap
+{
+	width: 50%;
+}
+.vector
+{
+	width: 100%;
+}
+::-webkit-input-placeholder {
+  color: #F6F6F6;
+  font-size: 25px;
+  font-family: Montserrat-light;
+}
+.btn1
+{
+	padding: 15px 20px 15px 20px;
+	background: #3B21F1;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	margin-top: 20px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: .5px;
+	font-family: Montserrat-medium;
+	cursor: pointer;
+	margin-left: 10px;
+}
+@media (max-width: 900px)
+{
+	.vectorwrap
+	{
+		display: none;
+	}
+	.sec-head
+	{
+		font-size: 30px;
+	}
+}
