@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%p4d6b5b9ifxn(3ttn3u!^iso0u$6dp)s!)-gi%s5t3u5fq8bn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['passadmin.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['passeradmin.herokuapp.com','passadmin.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -143,3 +143,4 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'teammghproduction@gmail.com'
 EMAIL_HOST_PASSWORD = 'senbagam'
+

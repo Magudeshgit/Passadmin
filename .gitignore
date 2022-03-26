@@ -1,2 +1,4 @@
 Scripts/
 lib/
+staticfiles/
+/db.sqlite3

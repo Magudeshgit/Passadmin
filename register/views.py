@@ -17,7 +17,9 @@ def CreatePage(request):
         if request.method == "POST":
                 form = RegisterForm(request.POST)
                 if form.is_valid():
-                        form.save()
+                        new_user = form.save()
+                        new_user = authenticate(username=form.cleaned_data['username'],password=form.cleaned_data['password1'])
+                        login(request, new_user)
                         emailname = request.POST.get("first_name")
                         emailid = request.POST.get("email")
                         #print(emailname)

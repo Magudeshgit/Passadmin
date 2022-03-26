@@ -35,7 +35,7 @@ body
 .content-box
 {
 	width: 80%;
-	height: 600px;
+	height: 80vh;
 	background: #121212;
 	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5),
 	            -5px -5px 10px 5px rgba(0,0,0,0.5);
@@ -48,6 +48,7 @@ body
 	align-items: center;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	padding: 10px 20px 10px 20px;
 }
 .semibox
 {
@@ -74,6 +75,12 @@ body
 	font-family: Montserrat-light;
 	font-size: 25px;
 }
+.msg-txt
+{
+	font-size: 32px;
+	text-align: center;
+}
+
 .icon-box
 {
 	display: flex;
@@ -126,7 +133,7 @@ ion-icon
 	{
 		flex-direction: column;
 	}
-	.main-txt
+	.main-txt, .msg-txt
 	{
 		font-size: 25px;
 	}

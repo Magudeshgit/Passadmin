@@ -11,7 +11,9 @@
 <body>
 {%include 'main/nav.html'%}
 <div class="parent">
+	<p class="msg-txt"></p>
 <div class="content-box">
+	
 	{% for dt in user.Passodata.all %}
    <div class="semibox">
    	<div class="txtbox">
@@ -40,8 +42,16 @@
 		pop = document.querySelector('.pop')
 		close = document.querySelector('.close')
 		bd = document.getElementsByTagName('body')
+		ct_box = document.querySelector('.content-box')
+		main_txt = document.querySelector('.msg-txt')
 		//menu.addEventListener('click',opmen)
 		//close.addEventListener('click',opmen)
+		if (ct_box.childElementCount < 1)
+		{
+			main_txt.innerHTML = "No Passwords Saved Yet, Save Password To View Here!"
+			ct_box.style.display = "none"
+		}
+		// if ct_box.childElementCount == 0
 		function opmen(){
 			pop.classList.toggle('active')
 			
