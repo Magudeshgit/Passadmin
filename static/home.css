@@ -24,6 +24,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html
+{
+	font-size: 62.5%;
+}
 body
 {
 	background: linear-gradient(-45deg,#191919,#090909);
@@ -78,24 +82,24 @@ body
 	width: 100%;
     height: 80vh;
 	display: flex;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px;
-	/*gap: 1.5em;*/
+	padding: 2rem;
+	margin: 0 auto 0 auto;
 }
 .wel-txt
 {
 	margin-top: -80px;
 }
-.vector
+.vector img
 {
-	max-width: 500px;
+	max-width: 100%;
 }
 .main-cont
 {
 	font-family: Montserrat-medium;
-	font-size: 30px;
+	font-size: 3rem;
 	max-width: 490px;
 
 }
@@ -117,6 +121,7 @@ body
 .ul
 {
 	text-decoration: underline;
+
 }
 .signup
 {
@@ -134,7 +139,7 @@ body
 .title
 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 4rem;
 	margin: 20px;
 	font-family: Montserrat-semiBold;
 }
@@ -159,7 +164,7 @@ body
 }
 .head
 {
-	font-size: 40px;
+	font-size: 4rem;
 	text-align: center;
 	font-family: Montserrat-semiBold;
 	margin: 10px;
@@ -211,13 +216,13 @@ body
 }
 .main-head
 {
-	font-size: 40px;
+	font-size: 4rem;
 	margin: 10px;
 	font-family: Montserrat-semiBold;
 }
 .sec-head
 {
-	font-size: 30px;
+	font-size: 3rem;
 	font-family: Montserrat-Regular;
 }
 .bottom
@@ -236,12 +241,12 @@ body
 }
 .cthead
 {
-	font-size: 40px;
+	font-size: 4rem;
 	font-family: Montserrat-medium;
 }
 .gmail-head
 {
-	font-size: 30px;
+	font-size: 3rem;
 	font-family: Montserrat-medium;
 	margin: 20px;
 }
@@ -249,12 +254,12 @@ body
 {
 	z-index: 100;
 	color: white;
-	font-size: 40px;
+	font-size: 4rem;
 }
 .lg
 {
 	font-family: Montserrat-SemiBold;
-    font-size: 40px;
+    font-size: 4rem;
     pointer-events: none;
     margin: 20px;	
 }
@@ -271,14 +276,17 @@ body
 {
 	scroll-snap-type: y mandatory;
 }
+/*--------------------------UTILITIES--------------------------*/
+.FLEX
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 @media (max-width: 900px)
 {
-	.cards
-	{
-		flex-wrap: wrap;
-		gap: 1.5em;
-
-	}
 	.hm-cont
 	{
 		justify-content: center;
@@ -288,12 +296,21 @@ body
 	{
 		display: none;
 	}
-	.main-cont, .card1-cont, .card3-cont, .card2-cont, .sec-head, .gmail-head,
+	/*.main-cont, .card1-cont, .card3-cont, .card2-cont, .sec-head, .gmail-head,
 	{
 		font-size: 25px;
 	}
 	.title, .head, .main-head, .cthead, .lg, .ion
 	{
 		font-size: 35px;
+	}*/
+}
+@media (max-width: 1010px)
+{
+	.cards
+	{
+		flex-wrap: wrap;
+		gap: 1.5em;
+
 	}
 }

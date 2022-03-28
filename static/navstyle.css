@@ -58,9 +58,9 @@
 	align-items: center;
 	width: 100%;
 	padding: 15px;
-	position: absolute;
+	/*position: absolute;
 	top: 0;
-	left: 0;
+	left: 0;*/
 }
 .side-bar
 {

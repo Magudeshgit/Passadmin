@@ -9,26 +9,27 @@
 	<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico'%}"/>
 </head>
 <body>
-	<div class="parent">
-		<div class="content">
-			{%include 'main/nav.html'%}
-			<p class="sec-head">Help us Improve with your Valuable Suggestions and Reviews</p>
-		    <div class="main-cnt">
-		    	
-		    	<form action="" method="POST">
-		    		{%csrf_token%}
-		    		<input name="firstname" type="text" class="int" placeholder="Firstname">
-		    		<input name="lastname" type="text" class="int" placeholder="Lastname">
-		    		<input name="Email" type="text" class="int" placeholder="Your Email">
-		    		<input name="Message"type="text" class="int" placeholder="Message">
-		    		<textarea name = "main-msg" placeholder="Additional Details" class="int"></textarea>
-        			<input type="submit" value="Submit" class="btn1"> 
-		    	</form>
-		    	<div class="vectorwrap">
-		    		<img src="{%static 'Assets/Images/undraw_contact_us_re_4qqt.svg'%}" class="vector">
-		    	</div>
-		    	<p class="msg">{{message}}</p>
-		    </div>
+	{%include 'main/nav.html'%}
+	<div class="parent flex">
+		<div class="content-div">
+			<div class="header"><p>Get In Touch With Us</p></div>
+			<div class="content"><p>Help Us Improve with your valuable suggestions and reviews, PassAdmin team is mainly focused on User Experience and Happiness</p></div>
+			<div class="social-med">
+				<div class="soc-header"><p>Follow us on</p></div>
+				<a href="#" class="soc-anchor"><img class="ic-sz"src="{%static 'Assets/Images/logo-instagram-ct.svg' %}">Instagram</a>
+				<a href="#" class="soc-anchor"><img class="ic-sz" src="{%static 'Assets/Images/logo-facebook.svg' %}">Facebook</a>
+				<a href="#" class="soc-anchor"><img class="ic-sz" src="{%static 'Assets/Images/icons8-twitter (1).svg' %}">Twitter</a>
+			</div>
+		</div>
+		<div class="form-div">
+			<form action="#" class="form" method="POST">
+				{%csrf_token%}
+				<input type="text" placeholder="Firstname*" class="int" name="firstname">
+				<input type="text" placeholder="Your Email" class="int" name="Email">
+				<input type="text" placeholder="Subject" class="int" name="Subject">
+				<textarea class="int" placeholder="Message" name="Message"></textarea>
+				<input type="submit" value="Submit" class="int sub">
+			</form>
 		</div>
 	</div>
 </body>

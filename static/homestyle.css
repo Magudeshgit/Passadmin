@@ -24,6 +24,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html
+{
+	font-size: 62.5%;
+}
 body
 {
 	font-family: Montserrat-medium;
@@ -37,7 +41,7 @@ body
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 80vh;
 	width: 100%;
 	padding-left: 100px;
 	padding-right: 100px;
@@ -66,12 +70,13 @@ body
 }
 .check-div label
 {
+	font-size: 1.5rem;
 	font-family: Montserrat-light;
 }
 .cont-header
 {
 	font-family: Montserrat-SemiBold;
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 20px;
 }
 .form
@@ -90,7 +95,7 @@ body
 	border: none;
 	outline: none;
 	text-align: center;
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-family: Montserrat-medium;
 	color: white;
 	margin: 15px;
@@ -103,7 +108,7 @@ body
 	border: none;
 	outline: none;
 	text-align: center;
-	font-size: 30px;
+	font-size: 3rem;
 	font-family: Montserrat-SemiBold;
 	background: black;
 	color: white;

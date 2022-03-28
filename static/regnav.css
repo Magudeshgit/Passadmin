@@ -24,10 +24,14 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html
+{
+	font-size: 62.5%;
+}
 .logo
 {
     font-family: Montserrat-SemiBold;
-    font-size: 40px;
+    font-size: 4rem;
     pointer-events: none;
 }
 .logo-sp
@@ -40,9 +44,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 20px 40px 0 40px;
-	position: absolute;
-	top: 0;
+	padding: 15px;
 	z-index: 10000;
 }
 .close
@@ -101,7 +103,7 @@ ul
 	text-decoration: none;
 	color: white;
 	font-family: Montserrat-regular;
-	font-size: 24px;
+	font-size: 2.4rem;
 	transition: .5s;
 	
 }
@@ -135,4 +137,13 @@ ion-icon
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+@media (max-width: 450px)
+{
+	.side-bar
+	{
+		width: 100%;
+		position: fixed;
+		right: -100%;
+	}
 }

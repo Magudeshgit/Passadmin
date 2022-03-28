@@ -33,11 +33,10 @@ def About(request):
 def contact_us(request):
      if request.method == "POST":
           fs_name = request.POST.get("firstname")
-          ls_name = request.POST.get("lastname")
           mail = request.POST.get("Email")
-          msg = request.POST.get("Message")
-          det = request.POST.get("main-msg")
-          template = render_to_string('main/Email.html', {'name': fs_name, 'lsname': ls_name, 'mail': mail, 'msg': msg, 'det': det})
+          subject = request.POST.get("Subject")
+          Message = request.POST.get("Message")
+          template = render_to_string('main/Email.html', {'name': fs_name, 'mail': mail, 'sub': subject, 'msg': Message})
           email = EmailMessage(
                               'PassAdmin_Contact_Form',
                               template,

@@ -17,7 +17,7 @@
 			<p class="cont-header">
 		     Add a Password
 			</p>
-			<form action="" method="POST" class="form">
+			<form action="" method="POST" autocomplete="off" class="form">
 				{%csrf_token%}
 				{{pask.Website}}
 				{{pask.Username}}
@@ -43,8 +43,11 @@
     int[2].placeholder = "Username"
     int[3].placeholder = "Password"
     // EVENT LISTENER FOR NAV FUNCTION
+    username = int[2]
     pass = int[3]
     pass.type="password"
+    // username.autocomplete = "off"
+    // password.autocomplete = "new-password"
     check.addEventListener('change', function(){
         	if (this.checked){
         		pass.type="text";
